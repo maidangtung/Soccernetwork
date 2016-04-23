@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.maidangtung.soccernetwork.SignUpActivity"
+    android:background="#C4F4">
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"/>
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"/>
+    <TextView
+        android:id="@+id/txtPass"
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email"
+        android:layout_marginTop="10sp"/>
+    <EditText
+        android:id="@+id/input_password"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPass" />
+    <TextView
+        android:id="@+id/txtPassConfirm"
+        android:text="Password Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_password"
+        android:layout_marginTop="10sp"/>
+    <EditText
+        android:id="@+id/input_password_confirm"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPassConfirm" />
+    <Button
+        android:id="@+id/btn_signup"
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_password_confirm"
+        android:layout_marginTop="10sp"
+        android:textColor="#000000"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:id="@+id/link_login"
+        android:text="Log in now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_signup"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        />
+</RelativeLayout>
